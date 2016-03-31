@@ -1,0 +1,371 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+.home-button {
+  background-color: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-left: 0px;
+  border-right: 0px;
+  padding: 0px;
+  margin-bottom: -1px;
+}
+
+.home-button a {
+  display: inline-block;
+  padding: 10px 20px;
+  width: 100%;
+  margin: 0px;
+}
+
+.shadow-me {
+  background-color: ghostwhite;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.home-button a:hover {
+  text-decoration: none;
+}
+
+.cabin-font {
+  font-family: "Marker Felt";
+  font-size: 2em;
+}
+
+.home-button h3 {
+  margin: 0px 32px 10px 50px;
+  font-size: 1.8rem;
+  padding-top: 5px;
+}
+
+.home-button a:hover h3 {
+  text-decoration: underline;
+}
+
+.home-button a h5 {
+  margin: 0px 32px 10px 30px;
+  padding-top: 5px;
+}
+
+.home-button a:hover h5 {
+  text-decoration: underline;
+}
+
+.home-button-icon {
+  float: left;
+  -webkit-backdrop-filter: drop-shadow(2px 0px 2px rgba(0,0,0, 0.2));
+  filter: drop-shadow(2px 0px 2px rgba(0,0,0, 0.2));
+  width: 40px;
+  /* display: none;  will need CSS code for phone view */
+}
+
+.home-button-arrow {
+  width: 15px;
+  height: 30px;
+  float: right;
+}
+
+.home-button-learn {
+  width: 100px;
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.home-button-train {
+  width: 100px;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+.home-button-play {
+  width: 100px;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+
+.shift-left {
+  margin-right: 30px;
+}
+.shift-right {
+  margin-left: 30px;
+}
+
+/* image styles */
+
+div.polaroid {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+div.polaroid h5 {
+  padding: 1em 2em;
+}
+
+
+.headshot-image {
+  margin: 1em;
+  width: 80%;
+  border: solid;
+  border-color: lightgrey;
+  border-width: 1px;
+  padding: 1px;
+  height: auto;
+  position: relative;
+}
+
+.slot-image {
+  width: 80%;
+  height: auto;
+  position: relative;
+  margin-top: 60px;
+}
+
+.full-pay-image {
+  width: 80%;
+  max-width: 600px;
+  min-width: 320px;
+  height: auto;
+  position: relative;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.royal-flush-image {
+  width: 90%;
+  height: auto;
+  position:relative;
+  margin-left: 25%;
+  margin-top: 30px;
+}
+
+.orange-card-image {
+  height: 2em;
+  width: auto;
+  float: left;
+}
+
+.four-aces-small-image {
+  height: 4.0em;
+  width: auto;
+  float: left;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-top: -0.5em;
+}
+
+.world-logo-image {
+  height: 2.0em;
+  width: auto;
+  float: left;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-top: -0.5em;
+}
+
+
+.white-text {
+  color: white;
+}
+
+.right-image {
+  float: right;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#grad1 {
+  height: 100%;
+  background: -webkit-linear-gradient(left top, rgba(255,0,0,0), rgba(4, 178, 216, 0.25)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, rgba(255,0,0,0), rgba(4, 177, 216, 0.25)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, rgba(255,0,0,0), rgba(4, 177, 216, 0.25)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, rgba(255,0,0,0), rgba(4, 177, 216, 0.25)); /* Standard syntax (must be last) */
+}
+
+.blue-gradient-background {
+  height: 100%;
+  background: -webkit-linear-gradient(left top, rgba(255,0,0,0), rgba(11, 76, 216, 0.8)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, rgba(255,0,0,0), rgba(11, 76, 216, 0.8)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, rgba(255,0,0,0), rgba(11, 76, 216, 0.8)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, rgba(255,0,0,0), rgba(11, 76, 216, 0.8)); /* Standard syntax (must be last) */
+}
+
+.my-content {
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.header-text {
+  font-weight: 200;
+  line-height: 24px;
+  margin-bottom:20px;
+}
+
+.content-spacer {
+  margin-bottom: 100px;
+}
+
+
+.border-me {
+  border-width: thin;
+  border-style: solid;
+  border-top-width: 0px;
+  border-color: lightgrey;
+}
+
+.hold-tabs {
+  font-size: 1.75em;
+  font-weight: 300;
+}
+
+.tab-content {
+  margin-left: 1em;
+}
+
+
+/*  site default colors */
+.banner-text {
+  color: burlywood;
+}
+
+.site-text-color {
+  color: #FFFFFF;
+}
+
+.name-font {
+  font-family: Anton, sans-serif;
+  font-size: 3em;
+  line-height: 1.2em;
+  padding: 1em;
+  text-shadow: 3px 3px black;
+}
+
+.main-picture {
+  width: 100%;
+  margin-top: -20px;
+}
+
+.stripe {
+  padding: 50px 0;
+  width: 100%;
+  background: #fff;
+}
+
+.stripe.red {
+  background-color: #ed3239;
+  background-image: radial-gradient(circle, #ed3239, #ca0f16);
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.stripe.blue {
+  background-color: #2ba5e6;
+  background-image: radial-gradient(circle, #2ba5e6, #217acc);
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.navbar-blue {
+  background-color: #2ba5e6;
+  background-image: radial-gradient(circle, #2ba5e6, #217acc);
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+
+.right-resume {
+  margin-top: 16px;
+}
+
+legend {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #217acc;
+}
+
+.resume-header {
+  color: #217acc;
+  margin-bottom: 5px;
+}
+
+/*  project page settings */
+@media screen and (min-width: 768px) {
+  .project-image {
+    width: 280px;
+    height: auto;
+    margin-right: 2em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .project-image {
+    width: 1px;
+  }
+
+  .world-logo-image {
+    margin-left: 0em;
+  }
+}
+
+
+.project-button {
+  margin-top: 2em;
+  margin-left: 1em;
+}
+
+.project-header {
+  color: #217acc;
+}
+
+.breadcrumb {
+  margin-top: -2em;
+}
+
+.welcome {
+  font-weight: 400;
+  font-style: italic;
+}
+
+#btnMenu {
+  margin-top: -8px;
+  margin-bottom: -9px;
+}

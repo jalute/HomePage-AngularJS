@@ -1,0 +1,153 @@
+.vegas-background {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+.vegas-background-image {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: -20px;
+}
+
+/* background banner styles */
+
+.gold-background {
+    background: url("/img/blurred-golden-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -18px;
+}
+
+.gold-header {
+    background: url("/img/blurred-golden-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: -100px;
+    margin-right: -25px;
+}
+
+.tree-header {
+    background: url("/img/tree-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: -100px;
+    margin-right: -25px;
+    color: maroon;
+}
+
+.lightblue-header {
+    background: url("/img/lightbluelines.gif");
+    background-repeat: repeat;
+    margin-left: -100px;
+    margin-right: -25px;
+    color: #fffc67;
+}
+
+.darkblue-header {
+    background: url("/img/darkbluelines.gif");
+    background-repeat: repeat;
+    margin-left: -100px;
+    margin-right: -25px;
+    color: #fffc67;
+}
+
+.aqua-header {
+    background: url("/img/aqualines.gif");
+    background-repeat: repeat;
+    margin-left: -100px;
+    margin-right: -25px;
+    color: #fffc67;
+}
+
+
+.background-vegas {
+    background: url("/img/Bellagio-in-Vegas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -18px;
+}
+
+.video-poker-background {
+    background: url("/img/videopoker_oil.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -18px;
+}
+
+.sunset-background {
+    background: url("/img/awesome_sunset_crop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -18px;
+}
+
+.orange-sunset-background {
+    background: url("/img/orange-sunset-vball1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #111;
+    background-position: 50% 50%;
+    transition: opacity .4s;
+    margin-top: -18px;
+}
+
+.chess-background {
+    background: url("/img/chess-strategy-lt.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -18px;
+}
+
+
+.mittens-background {
+    background: url("/img/cat-mittens-art.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+
+.teal-background-body {
+    background: url("/img/teal_background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.teal-background {
+    background: url("/img/teal_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.red-cross-background {
+    background: url("/img/Red_cross.png") repeat-x center center;
+    -webkit-background-size: auto 100%;
+    -moz-background-size: auto 100%;
+    background-size: auto 100%;
+}
+
+.green-cross-background {
+    background: url("/img/Green_cross.png") repeat-x center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.light-orange-cross-background {
+    background: url("/img/LightOrange_cross.png") repeat-x center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.orange-cross-background {
+    background: url("/img/Orange_cross.png") repeat-x center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+
+}

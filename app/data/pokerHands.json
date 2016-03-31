@@ -1,0 +1,213 @@
+[
+  {
+    "id": "royalFlush",
+    "title": "Royal Flush",
+    "handRank": 1,
+    "example": "10♠ J♠ Q♠ K♠ A♠",
+    "pokerHand": [
+      {"rank": "10", "suit": "♣", "color": ""},
+      {"rank": "J", "suit": "♣", "color": ""},
+      {"rank": "Q", "suit": "♣", "color": ""},
+      {"rank": "K", "suit": "♣", "color": ""},
+      {"rank": "A", "suit": "♣", "color": ""}
+    ],
+    "secondHand": [
+      {"rank": "10", "suit": "♥", "color": "red"},
+      {"rank": "J", "suit": "♥", "color": "red"},
+      {"rank": "Q", "suit": "♥", "color": "red"},
+      {"rank": "K", "suit": "♥", "color": "red"},
+      {"rank": "A", "suit": "♥", "color": "red"}
+    ],
+    "description": "A Royal Flush is an Ace high straight flush as shown above.  A Royal Flush is the highest ranking standard poker hand. In Video Poker, this is considered the JACKPOT that typically pays 800 to 1 with a max bet. All other straight flushes only pays 50 to 1.  It is always a good strategy to try to get a Royal Flush because of the high payout, in some situations discarding a High Pair"
+  },
+  {
+    "id": "straightFlush",
+    "title": "Straight Flush",
+    "handRank": 2,
+    "example": "5♠ 6♠ 7♠ 8♠ 9♠",
+    "pokerHand": [
+      {"rank": "A", "suit": "♠", "color": ""},
+      {"rank": "2", "suit": "♠", "color": ""},
+      {"rank": "3", "suit": "♠", "color": ""},
+      {"rank": "4", "suit": "♠", "color": ""},
+      {"rank": "5", "suit": "♠", "color": ""}
+    ],
+    "secondHand": [
+      {"rank": "8", "suit": "♦", "color": "red"},
+      {"rank": "9", "suit": "♦", "color": "red"},
+      {"rank": "10", "suit": "♦", "color": "red"},
+      {"rank": "J", "suit": "♦", "color": "red"},
+      {"rank": "Q", "suit": "♦", "color": "red"}
+    ],
+    "description": "A Straight Flush is a hand that contains five cards in sequence, all of the same suit. Aces can play low in straight flushes, an example is listed above."
+  },
+  {
+    "id": "fourKind",
+    "title": "Four of a Kind",
+    "handRank": 3,
+    "example": "4♠ <span class='red'>4♥ 4♦</span> 4♣",
+    "pokerHand": [
+      {"rank": "4", "suit": "♠", "color": ""},
+      {"rank": "4", "suit": "♦", "color": "red"},
+      {"rank": "4", "suit": "♥", "color": "red"},
+      {"rank": "4", "suit": "♣", "color": ""},
+      {"rank": "J", "suit": "♠", "color": "discard-black"}
+    ],
+    "secondHand": [
+      {"rank": "A", "suit": "♣", "color": "discard-black"},
+      {"rank": "K", "suit": "♠", "color": ""},
+      {"rank": "K", "suit": "♦", "color": "red"},
+      {"rank": "K", "suit": "♥", "color": "red"},
+      {"rank": "K", "suit": "♣", "color": ""}
+    ],
+    "description": "Four of a kind also known as \"quads\" is a poker hand that contain four cards of the same value or rank."
+  },
+  {
+    "id": "fullHouse",
+    "title": "Full House",
+    "handRank": 4,
+    "example": "J♠ <span class='red'>J♥ J♦</span> 2♣ <span class='red'>2♦",
+    "pokerHand": [
+      {"rank": "10", "suit": "♠", "color": ""},
+      {"rank": "10", "suit": "♦", "color": "red"},
+      {"rank": "10", "suit": "♥", "color": "red"},
+      {"rank": "4", "suit": "♣", "color": ""},
+      {"rank": "4", "suit": "♠", "color": ""}
+    ],
+    "secondHand": [
+      {"rank": "9", "suit": "♦", "color": "red"},
+      {"rank": "9", "suit": "♠", "color": ""},
+      {"rank": "9", "suit": "♥", "color": "red"},
+      {"rank": "A", "suit": "♣", "color": ""},
+      {"rank": "A", "suit": "♠", "color": ""}
+    ],
+    "description": "A Full House, also known as a \"Full Boat\", is a hand that contains three matching cards of one value or rank Aces can play low in straight flushes, an example is listed above."
+  },
+  {
+    "id": "flush",
+    "title": "Flush",
+    "handRank": 5,
+    "example": "2♠ 6♠ 8♠ 10♠ K♠",
+    "pokerHand": [
+      {"rank": "Q", "suit": "♣", "color": ""},
+      {"rank": "9", "suit": "♣", "color": ""},
+      {"rank": "8", "suit": "♣", "color": ""},
+      {"rank": "4", "suit": "♣", "color": ""},
+      {"rank": "2", "suit": "♣", "color": ""}
+    ],
+    "secondHand": [
+      {"rank": "A", "suit": "♥", "color": "red"},
+      {"rank": "J", "suit": "♥", "color": "red"},
+      {"rank": "10", "suit": "♥", "color": "red"},
+      {"rank": "8", "suit": "♥", "color": "red"},
+      {"rank": "3", "suit": "♥", "color": "red"}
+    ],
+    "description": "A Flush is a hand where all five cards are the same suit but not in a sequence. A Flush is described by its highest card, in the top example above, its called a \"Queen High Flush\". Ace is considered a high card in a Flush (bottom example)."
+  },
+  {
+    "id": "straight",
+    "title": "Straight",
+    "handRank": 6,
+    "example": "5♠ <span class='red'>6♥ 7♦</span> 8♣ <span class='red'>9♦</span>",
+    "pokerHand": [
+      {"rank": "A", "suit": "♥", "color": "red"},
+      {"rank": "2", "suit": "♥", "color": "red"},
+      {"rank": "3", "suit": "♠", "color": ""},
+      {"rank": "4", "suit": "♥", "color": "red"},
+      {"rank": "5", "suit": "♥", "color": "red"}
+    ],
+    "secondHand": [
+      {"rank": "10", "suit": "♣", "color": ""},
+      {"rank": "9", "suit": "♦", "color": "red"},
+      {"rank": "8", "suit": "♦", "color": "red"},
+      {"rank": "7", "suit": "♠", "color": ""},
+      {"rank": "6", "suit": "♠", "color": ""}
+    ],
+    "description": "A Straight is a hand that contains five cards in sequence and in a least two different suits. Aces can play low or high in a straight, an example is listed above. "
+  },
+  {
+    "id": "threeKind",
+    "title": "Three of a Kind",
+    "handRank": 7,
+    "example": "A♠ <span class='red'>A♥ A♦</span>",
+    "pokerHand": [
+      {"rank": "Q", "suit": "♠", "color": ""},
+      {"rank": "Q", "suit": "♦", "color": "red"},
+      {"rank": "Q", "suit": "♥", "color": "red"},
+      {"rank": "7", "suit": "♣", "color": "discard-black"},
+      {"rank": "6", "suit": "♠", "color": "discard-black"}
+    ],
+    "secondHand": [
+      {"rank": "8", "suit": "♦", "color": "red"},
+      {"rank": "8", "suit": "♠", "color": ""},
+      {"rank": "8", "suit": "♥", "color": "red"},
+      {"rank": "K", "suit": "♣", "color": "discard-black"},
+      {"rank": "5", "suit": "♠", "color": "discard-black"}
+    ],
+    "description": "Three of a Kind, also called \"trips\" is a poker hand that contains three cards of the same rank, plus two cards which are not of this rank nor each other."
+  },
+  {
+    "id": "twoPair",
+    "title": "Two Pair",
+    "handRank": 8,
+    "example": "Q♠ <span class='red'>Q♥</span> 3♣ <span class='red'>3♦</span>",
+    "pokerHand": [
+      {"rank": "J", "suit": "♠", "color": ""},
+      {"rank": "J", "suit": "♦", "color": "red"},
+      {"rank": "5", "suit": "♥", "color": "red"},
+      {"rank": "5", "suit": "♣", "color": ""},
+      {"rank": "6", "suit": "♠", "color": "discard-black"}
+    ],
+    "secondHand": [
+      {"rank": "2", "suit": "♠", "color": ""},
+      {"rank": "2", "suit": "♦", "color": "red"},
+      {"rank": "9", "suit": "♥", "color": "red"},
+      {"rank": "9", "suit": "♣", "color": ""},
+      {"rank": "A", "suit": "♦", "color": "discard-red"}
+    ],
+    "description": "A pair is a hand that has two cards of the same rank, Two Pair contains two cards of the same rank, plus another pair not matching the first pair. The highest pair is ranked first over the smaller hand. "
+  },
+  {
+    "id": "pair",
+    "title": "Pair",
+    "handRank": 9,
+    "example": "K♠ <span class='red'>K♥",
+    "pokerHand": [
+      {"rank": "Q", "suit": "♦", "color": "red"},
+      {"rank": "Q", "suit": "♥", "color": "red"},
+      {"rank": "4", "suit": "♦", "color": "discard-red"},
+      {"rank": "8", "suit": "♣", "color": "discard-black"},
+      {"rank": "6", "suit": "♠", "color": "discard-black"}
+    ],
+    "secondHand": [
+      {"rank": "3", "suit": "♣", "color": ""},
+      {"rank": "3", "suit": "♠", "color": ""},
+      {"rank": "J", "suit": "♦", "color": "discard-red"},
+      {"rank": "10", "suit": "♠", "color": "discard-black"},
+      {"rank": "5", "suit": "♥", "color": "discard-red"}
+    ],
+    "description": "A pair is a hand that has two cards of the same rank, plus three cards which are not of this rank nor the same as each other. A High Pair is referred to a pair of Jacks, Queens, Kings, or Aces (top hand). When referring to \"Jacks or Better\" video poker, a payout is rewarded for a pair of Jacks or any hand greater than a pair of Jacks."
+  },
+  {
+    "id": "highCard",
+    "title": "High Card",
+    "handRank": 10,
+    "example": "A♠ <span class='red'>9♥</span> 8♣ 5♠ 2♣",
+    "pokerHand": [
+      {"rank": "Q", "suit": "♠", "color": ""},
+      {"rank": "9", "suit": "♥", "color": "discard-red"},
+      {"rank": "8", "suit": "♦", "color": "discard-red"},
+      {"rank": "3", "suit": "♣", "color": "discard-black"},
+      {"rank": "2", "suit": "♠", "color": "discard-black"}
+    ],
+    "secondHand": [
+      {"rank": "A", "suit": "♦", "color": "red"},
+      {"rank": "K", "suit": "♠", "color": ""},
+      {"rank": "J", "suit": "♦", "color": "red"},
+      {"rank": "5", "suit": "♠", "color": "discard-black"},
+      {"rank": "3", "suit": "♥", "color": "discard-red"}
+    ],
+    "description": "A high card in video poker is referring to Jacks, Queens, Kings, and Aces. When your hand has no Pairs, Straights, or Flushes, holding High cards gives you a better opportunity to drawing a winning hand."
+  }
+
+]

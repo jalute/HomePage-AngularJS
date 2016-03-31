@@ -1,0 +1,212 @@
+[
+  {
+    "id": "advScenario1",
+    "blueHeader": "Straight",
+    "greenHeader": "Flush Draw",
+    "description": "Hand dealt is one card away from either a Straight or a Flush.",
+    "imageURL": "img/scenario2-1.png",
+    "imageText": "Straight vs Flush Draw",
+    "pokerHand": [
+      {"rank": "2", "suit": "♦", "color": "red", "hold": ""},
+      {"rank": "3", "suit": "♣", "color": "", "hold": "hold"},
+      {"rank": "4", "suit": "♣", "color": "", "hold": "hold"},
+      {"rank": "5", "suit": "♣", "color": "", "hold": "hold"},
+      {"rank": "9", "suit": "♣", "color": "", "hold": "hold"}
+    ],
+    "solutionCss": "scenario-green",
+    "hiddenCss": "hidden",
+    "rightCss": "hidden",
+    "wrongCss": "hidden",
+    "solutionTitle": "Flush Draw",
+    "solutionText": "Go for the Flush because the payout is higher and statically 3 times better chance of winning versus a Straight."
+  },
+  {
+  "id": "advScenario2",
+  "blueHeader": "Royal Flush Draw",
+  "greenHeader": "High Cards",
+  "description": "3 high cards of mixed suits or 3 card Royal Flush draw with 10.",
+  "imageURL": "img/scenario2-2.png",
+  "imageText": "Royal Flush Draw vs High Cards",
+  "pokerHand": [
+    {"rank": "7", "suit": "♠", "color": "", "hold": ""},
+    {"rank": "10", "suit": "♦", "color": "red", "hold": "hold"},
+    {"rank": "J", "suit": "♦", "color": "red", "hold": "hold"},
+    {"rank": "Q", "suit": "♦", "color": "red", "hold": "hold"},
+    {"rank": "A", "suit": "♠", "color": "", "hold": ""}
+  ],
+  "solutionCss": "scenario-blue",
+  "hiddenCss": "hidden",
+    "rightCss": "hidden",
+    "wrongCss": "hidden",
+    "solutionTitle": "Royal Flush Draw",
+  "solutionText": "Keep the three cards to a Royal Straight Flush even though the third card is a 10. The outside chance of getting a Royal Flush helps your winning odds."
+  },
+  {
+    "id": "advScenario3",
+    "blueHeader": "High Card",
+    "greenHeader": "Flush Draw",
+    "description": "Dealt one High Card with low cards that are of the same suit.",
+    "imageURL": "img/scenario2-3.png",
+    "imageText": "High Card vs Flush Draw",
+    "pokerHand": [
+      {"rank": "K", "suit": "♦", "color": "red", "hold": ""},
+      {"rank": "2", "suit": "♠", "color": "", "hold": "hold"},
+      {"rank": "5", "suit": "♠", "color": "", "hold": "hold"},
+      {"rank": "7", "suit": "♠", "color": "", "hold": "hold"},
+      {"rank": "10", "suit": "♠", "color": "", "hold": "hold"}
+    ],
+    "solutionCss": "scenario-green",
+    "hiddenCss": "hidden",
+    "rightCss": "hidden",
+    "wrongCss": "hidden",
+    "solutionTitle": "Flush Draw",
+    "solutionText": "Go for Flush draw even though statically, its better to hold the High card, odds are still good enough to go for a Flush."
+  },
+  {
+    "id": "advScenario4",
+    "blueHeader": "A-K-Q-J",
+    "greenHeader": "Less High Cards",
+    "description": "Four high cards with no matching suit. How many high cards do you hold?",
+    "imageURL": "img/scenario2-4.png",
+    "imageText": "A-K-Q-J Mixed Suit",
+    "pokerHand": [
+      {"rank": "6", "suit": "♦", "color": "red", "hold": ""},
+      {"rank": "J", "suit": "♥", "color": "red", "hold": "hold"},
+      {"rank": "Q", "suit": "♣", "color": "", "hold": "hold"},
+      {"rank": "K", "suit": "♦", "color": "red", "hold": "hold"},
+      {"rank": "A", "suit": "♠", "color": "", "hold": "hold"}
+    ],
+    "solutionCss": "scenario-blue",
+    "hiddenCss": "hidden",
+    "rightCss": "hidden",
+    "wrongCss": "hidden",
+    "solutionTitle": "Hold A-K-Q-J",
+    "solutionText": "Keep all high cards (A-K-Q-J) in this scenario because any card over a 10 and you win."
+  },
+  {
+    "id": "advScenario5",
+    "blueHeader": "J-Q-A",
+    "greenHeader": "Less High Cards",
+    "description": "Three high cards with mixed suit.",
+    "imageURL": "img/scenario2-5.png",
+    "imageText": "Three high cards mixed suit",
+    "pokerHand": [
+      {"rank": "5", "suit": "♦", "color": "red", "hold": ""},
+      {"rank": "9", "suit": "♥", "color": "red", "hold": ""},
+      {"rank": "J", "suit": "♣", "color": "", "hold": "hold"},
+      {"rank": "Q", "suit": "♦", "color": "red", "hold": "hold"},
+      {"rank": "A", "suit": "♠", "color": "", "hold": ""}
+    ],
+    "solutionCss": "scenario-green",
+    "hiddenCss": "hidden",
+    "rightCss": "hidden",
+    "wrongCss": "hidden",
+    "solutionTitle": "Hold Two High Cards",
+    "solutionText": "Its better to hold on to two of the lowest high cards.  Holding two cards instead of three gives you a slightly better chance of payout (less than 1%)."
+  },
+  {
+    "id": "advScenario6",
+    "blueHeader": "High Cards",
+    "greenHeader": "Suited High Cards",
+    "description": "Three high cards with two high cards the same suit.",
+    "imageURL": "img/scenario2-6.png",
+    "imageText": "Three high cards mixed suit",
+    "pokerHand": [
+      {"rank": "5", "suit": "♦", "color": "red", "hold": ""},
+      {"rank": "9", "suit": "♥", "color": "red", "hold": ""},
+      {"rank": "J", "suit": "♠", "color": "", "hold": "hold"},
+      {"rank": "A", "suit": "♠", "color": "", "hold": "hold"},
+      {"rank": "Q", "suit": "♦", "color": "red", "hold": ""}
+    ],
+    "solutionCss": "scenario-green",
+    "hiddenCss": "hidden",
+    "rightCss": "hidden",
+    "wrongCss": "hidden",
+    "solutionTitle": "Suited High Cards",
+    "solutionText": "Odds are slightly better to hold on to the two suited high cards instead of keeping all three cards (39% vs 37%)."
+  },
+  {
+    "id": "advScenario7",
+    "blueHeader": "Mixed High",
+    "greenHeader": "Straight Flush Draw",
+    "description": "Two high cards (unsuited) or a 3 card Straight Flush (no gaps)",
+    "imageURL": "img/scenario2-7.png",
+    "imageText": "High Cards vs 3 Card Straight Flush",
+    "pokerHand": [
+      {"rank": "3", "suit": "♠", "color": "", "hold": "hold"},
+      {"rank": "4", "suit": "♠", "color": "", "hold": "hold"},
+      {"rank": "5", "suit": "♠", "color": "", "hold": "hold"},
+      {"rank": "Q", "suit": "♦", "color": "red", "hold": ""},
+      {"rank": "K", "suit": "♥", "color": "red", "hold": ""}
+    ],
+    "solutionCss": "scenario-green",
+    "hiddenCss": "hidden",
+    "rightCss": "hidden",
+    "wrongCss": "hidden",
+    "solutionTitle": "Straight Flush Draw",
+    "solutionText": "Because of the additional possibility of a straight or a flush, it is best to hold on to the low Straight Flush."
+  },
+  {
+    "id": "advScenario8",
+    "blueHeader": "Suited High",
+    "greenHeader": "Straight Flush Draw",
+    "description": "Two suited high cards or a 3 card Straight Flush (no gaps)",
+    "imageURL": "img/scenario2-7.png",
+    "imageText": "Suited High vs 3 Card Straight Flush",
+    "pokerHand": [
+      {"rank": "3", "suit": "♠", "color": "", "hold": ""},
+      {"rank": "4", "suit": "♠", "color": "", "hold": ""},
+      {"rank": "5", "suit": "♠", "color": "", "hold": ""},
+      {"rank": "J", "suit": "♦", "color": "red", "hold": "hold"},
+      {"rank": "K", "suit": "♦", "color": "red", "hold": "hold"}
+    ],
+    "solutionCss": "scenario-blue",
+    "hiddenCss": "hidden",
+    "rightCss": "hidden",
+    "wrongCss": "hidden",
+    "solutionTitle": "Suited High",
+    "solutionText": "It is better odds in this scenario to hold on to the high cards of the same suit instead of keeping the low Straight Flush."
+  },
+  {
+    "id": "advScenario9",
+    "blueHeader": "High Cards",
+    "greenHeader": "10 Suited",
+    "description": "Two High Cards with a 10 matching suit with the Jack.",
+    "imageURL": "img/scenario2-9.png",
+    "imageText": "Two High Cards with a 10",
+    "pokerHand": [
+      {"rank": "2", "suit": "♠", "color": "", "hold": ""},
+      {"rank": "5", "suit": "♣", "color": "", "hold": ""},
+      {"rank": "10", "suit": "♦", "color": "red", "hold": ""},
+      {"rank": "J", "suit": "♦", "color": "red", "hold": "hold"},
+      {"rank": "Q", "suit": "♣", "color": "", "hold": "hold"}
+    ],
+    "solutionCss": "scenario-blue",
+    "hiddenCss": "hidden",
+    "rightCss": "hidden",
+    "wrongCss": "hidden",
+    "solutionTitle": "High Cards",
+    "solutionText": "Keep the two High Cards, retain the 10 if you have three cards to a Royal Flush, not two."
+  },
+  {
+    "id": "advScenario10",
+    "blueHeader": "High Card",
+    "greenHeader": "10 Suited",
+    "description": "High card with a 10 of the same suit.",
+    "imageURL": "img/scenario2-10.png",
+    "imageText": "High Card with 10",
+    "pokerHand": [
+      {"rank": "2", "suit": "♥", "color": "red", "hold": ""},
+      {"rank": "3", "suit": "♣", "color": "", "hold": ""},
+      {"rank": "7", "suit": "♦", "color": "red", "hold": ""},
+      {"rank": "10", "suit": "♠", "color": "", "hold": "hold"},
+      {"rank": "K", "suit": "♠", "color": "", "hold": "hold"}
+    ],
+    "solutionCss": "scenario-green",
+    "hiddenCss": "hidden",
+    "rightCss": "hidden",
+    "wrongCss": "hidden",
+    "solutionTitle": "High Card with 10",
+    "solutionText": "Normally, you would only hold on to the King but the 10 is of the same suit. Since there are no other high cards, hold the 10 for a outside shot of Royal Flush."
+  }
+]

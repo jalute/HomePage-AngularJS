@@ -1,0 +1,17 @@
+{
+  "name": "VideoPokerTrainer",
+  "description": "A Video Poker Trainer application written in AngularJS",
+  "version": "0.0.0",
+  "homepage": "http://jalute.com/videopokertrainer",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.4.0",
+    "angular-route": "~1.4.0",
+    "angular-loader": "~1.4.0",
+    "angular-mocks": "~1.4.0",
+    "html5-boilerplate": "~5.2.0",
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.6"
+  }
+}

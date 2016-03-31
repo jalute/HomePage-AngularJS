@@ -45,10 +45,6 @@ app/                    --> all of the source files for the application
     tabs/               --> video poker tactics section
   app.js                --> main application module
   index.html            --> app layout file (the main html template file of the app)
-karma.conf.js         --> config file for running unit tests with Karma
-e2e-tests/            --> end-to-end tests
-  protractor-conf.js    --> Protractor config file
-  scenarios.js          --> end-to-end scenarios to be run by Protractor
 ```
 
 ### Running the App during Development
@@ -67,8 +63,18 @@ Now browse to the app at `http://localhost:8080/`.
 ### Running the App in Production
 Before running the 'gulp install' command, make sure production code is uncommented in the index.html file.
 
-'''
+```
 gulp install
-'''
+```
 
 A deployment folder is created at the root folder called '_build'.  Deploy this directory to host website.
+
+### Disclaimer
+
+By accessing the Video Poker Training, you are agreeing to the following terms.  If you do not agree to these terms, do not use this application.
+
+The developer accepts no responsibility or liability for any losses which may be incurred by any person or persons using the whole or part of the contents of the information, systems, plans, methods and games contained herein and made available in this application. Use the information provided on the Video Poker Training application at your own risk.
+
+No gambling occurs in the Video Poker Training application. Video Poker Training application are provided on an 'as is basis' and may be played for free for fun purposes. 
+
+The developer does not promote or encourage illegal or underage gambling, or gambling to persons who reside in jurisdictions where gambling is considered unlawful. In those instances, this application is presented for informational and entertainment purposes only. By opening Video Poker Training, you agree that you are aware of the terms outlined herein and reside in an area where it is not unlawful to gamble online.

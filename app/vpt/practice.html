@@ -1,0 +1,81 @@
+<div class="jumbotron video-poker-background">
+    <div class="container">
+        <h1>Video Poker Simulator</h1>
+        <p>This video poker simulator will help you practice your hold strategy by showing you the winning probability.
+            Try to get 50 optimized hands in a row!</p>
+    </div>
+</div>
+<ol class="breadcrumb">
+    <li>Video Poker Trainer</li>
+    <li id="navBasics" class="{{activeBasics}}"><a href="#/vpt/intro">Basics</a></li>
+    <li id="navTactics" class="{{activeTactics}}"><a href="#/vpt/tactics">Tactics</a></li>
+    <li id="navPractice" class="{{activePractice}}"><a href="#/vpt/practice">Practice</a></li>
+</ol>
+
+<div class="container">
+    <p>
+        Test your skills on which card to hold.  Press Deal after making selection to see if you are holding the correct card.  Try to get 50 in a row!
+    </p>
+
+    <div class="row">
+        <div class="col-lg-4 col-md-5 col-sm-6 col-sm-offset-3 col-lg-offset-0 col-md-offset-0">
+            <div id="scrollable-area">
+                <table class="table table-condensed scrollable-area-table" id="tableProbabilities">
+                    <tr class="scrollable-area-header">
+                        <th>Hold Cards</th>
+                        <th>Avg Win</th>
+                        <th>Win %</th>
+                    </tr>
+                    <tbody class="scrollable-area-table-body">
+                    <tr class="scrollable-area-col"  ng-repeat="bestHold in bestHolds | orderBy: ['-win_average', '-win_amount_avg']">
+                        <td><span ng-repeat="oneCard in bestHold.hold_cards">{{oneCard.cardOutput}}</span></td>
+                        <td>{{bestHold.win_amount_avg | number : 2}}</td>
+                        <td>{{bestHold.win_average * 100 | number : 2}}%</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-sm-offset-1 col-lg-offset-0 col-md-offset-0">
+            <div class="row">
+                <div class="text-center">
+                    <p class="practice-payout">{{handPayout}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 hold-container" ng-repeat="card in pokerHand">
+                    <p class="card-hold text-center">{{card.hold}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 card-container" ng-repeat="card in pokerHand">
+                    <button id="btn-{{card.cardOutput}}"  class="flip-card" role="button" ng-click="onCardClick(card)">
+                        <figure class="front {{card.color}}">
+                            <div class="card-rank">{{card.rank}}</div>
+                            <div class="small-suit">{{card.suit}}</div>
+                            <div class="xlarge-suit">{{card.suit}}</div>
+                        </figure>
+                        <figure class="back">
+                        </figure>
+                    </button>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row practice-button-row">
+                <div class="col-lg-offset-2 col-md-offset-2 col-lg-2 col-md-2 col-sm-4 col-xs-3"><button class="btn btn-primary btn-lg {{dealDisabled}}" id="btnDeal" ng-click="onDealClick(deck)">Deal</button></div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3"><button class="btn btn-default btn-lg {{drawDisabled}}" id="btnDraw" ng-click="onDrawClick(pokerHand, deck)">Draw</button></div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6"><button class="btn btn-default btn-lg {{analyzeDisabled}}" ng-click="onAnalyzeClick(pokerHand)">Is Hold Correct?</button></div>
+            </div>
+            <hr>
+            <div class="row text-center">
+                <div class="correct-text">{{correctWrong}}</div>
+                <h5>{{evaluation}}</h5>
+                <div class="text-center">Optimal Streak <label class="input-label">{{optimalCount}}</label></div>
+            </div>
+        </div>
+    </div>
+</div>

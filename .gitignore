@@ -2,3 +2,5 @@ _build/**
 node_modules/**
 app/bower_components/**
 .idea/**
+e2e-tests/**
+karma.conf.js

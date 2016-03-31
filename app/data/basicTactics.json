@@ -1,0 +1,232 @@
+[ {
+  "id": "basicScenario1",
+  "blueHeader": "Straight Flush",
+  "greenHeader": "Royal Flush Draw",
+  "description": "Straight Flush on the draw, but it is one card away from a Royal Straight Flush.",
+  "imageURL": "img/scenario1-1.png",
+  "imageText": "Straight Flush versus Royal Flush Draw",
+  "pokerHand": [
+    {"rank": "9", "suit": "♣", "color": "", "hold": "hold"},
+    {"rank": "10", "suit": "♣", "color": "", "hold": "hold"},
+    {"rank": "J", "suit": "♣", "color": "", "hold": "hold"},
+    {"rank": "Q", "suit": "♣", "color": "", "hold": "hold"},
+    {"rank": "K", "suit": "♣", "color": "", "hold": "hold"}
+  ],
+  "solutionCss": "scenario-blue",
+  "hiddenCss": "hidden",
+  "rightCss": "hidden",
+  "wrongCss": "hidden",
+  "solutionTitle": "Straight Flush",
+  "solutionText": "Always hold a Straight Flush and take the payout. This is the only scenario where you do not draw for a Royal Flush."
+  },
+  {
+    "id": "basicScenario2",
+    "blueHeader": "Flush",
+    "greenHeader": "Royal Flush Draw",
+    "description": "Flush on the draw but it is one card away from a Royal Straight Flush.",
+    "imageURL": "img/scenario1-2.png",
+    "imageText": "Flush vs Royal Flush Draw",
+    "pokerHand": [
+      {"rank": "3", "suit": "♠", "color": "", "hold": ""},
+      {"rank": "10", "suit": "♠", "color": "", "hold": "hold"},
+      {"rank": "J", "suit": "♠", "color": "", "hold": "hold"},
+      {"rank": "Q", "suit": "♠", "color": "", "hold": "hold"},
+      {"rank": "K", "suit": "♠", "color": "", "hold": "hold"}
+    ],
+    "solutionCss": "scenario-green",
+    "hiddenCss": "hidden",
+    "rightCss": "hidden",
+    "wrongCss": "hidden",
+    "solutionTitle": "Royal Flush Draw",
+    "solutionText": "It is best to discard the Three of Spades (3♠) and go for the Royal Flush.  Even if you don't get it, you have a chance of getting another Flush"
+  },
+  {
+    "id": "basicScenario3",
+    "blueHeader": "Flush",
+    "greenHeader": "Straight Flush Draw",
+    "description": "Flush on the draw but it is one card away from a Straight Flush.",
+    "imageURL": "img/scenario1-3.png",
+    "imageText": "Flush vs Straight Flush Draw",
+    "pokerHand": [
+      {"rank": "J", "suit": "♠", "color": "", "hold": "hold"},
+      {"rank": "6", "suit": "♠", "color": "", "hold": "hold"},
+      {"rank": "7", "suit": "♠", "color": "", "hold": "hold"},
+      {"rank": "8", "suit": "♠", "color": "", "hold": "hold"},
+      {"rank": "9", "suit": "♠", "color": "", "hold": "hold"}
+    ],
+    "solutionCss": "scenario-blue",
+    "hiddenCss": "hidden",
+    "rightCss": "hidden",
+    "wrongCss": "hidden",
+    "solutionTitle": "Flush",
+    "solutionText": "It is best to hold on to your Flush and taking the payout. There is only a 4% chance of getting a Straight Flush"
+  },
+  {
+    "id": "basicScenario4",
+    "blueHeader": "Straight",
+    "greenHeader": "Straight Flush Draw",
+    "description": "Straight on the draw but it is one card away from a Straight Flush.",
+    "imageURL": "img/scenario1-4.png",
+    "imageText": "Straight vs Straight Flush Draw",
+    "pokerHand": [
+      {"rank": "4", "suit": "♠", "color": "", "hold": "hold"},
+      {"rank": "5", "suit": "♠", "color": "", "hold": "hold"},
+      {"rank": "6", "suit": "♠", "color": "", "hold": "hold"},
+      {"rank": "7", "suit": "♠", "color": "", "hold": "hold"},
+      {"rank": "8", "suit": "♦", "color": "red", "hold": "hold"}
+    ],
+    "solutionCss": "scenario-blue",
+    "hiddenCss": "hidden",
+    "rightCss": "hidden",
+    "wrongCss": "hidden",
+    "solutionTitle": "Straight",
+    "solutionText": "Playing conservative is suggested but the odds are at 29.78% to get a winning hand drawing one card. Odds are better if you have high cards."
+  },
+  {
+    "id": "basicScenario5",
+    "blueHeader": "High Pair",
+    "greenHeader": "Straight Flush Draw",
+    "description": "High Pair but it is one card away from a Straight Flush.",
+    "imageURL": "img/scenario1-5.png",
+    "imageText": "High Pair vs Straight Flush Draw",
+    "pokerHand": [
+      {"rank": "8", "suit": "♠", "color": "", "hold": "hold"},
+      {"rank": "9", "suit": "♠", "color": "", "hold": "hold"},
+      {"rank": "10", "suit": "♠", "color": "", "hold": "hold"},
+      {"rank": "J", "suit": "♠", "color": "", "hold": "hold"},
+      {"rank": "J", "suit": "♦", "color": "red", "hold": ""}
+    ],
+    "solutionCss": "scenario-green",
+    "hiddenCss": "hidden",
+    "rightCss": "hidden",
+    "wrongCss": "hidden",
+    "solutionTitle": "Straight Flush Draw",
+    "solutionText": "A pair is not worth keeping in this scenario, it is best to go for the Straight Flush."
+  },
+  {
+    "id": "basicScenario61",
+    "blueHeader": "Low Pair",
+    "greenHeader": "Flush Draw",
+    "description": "Low Pair but it is only one card away from a Flush.",
+    "imageURL": "img/scenario1-61.png",
+    "imageText": "Low Pair vs Flush Draw",
+    "pokerHand": [
+      {"rank": "2", "suit": "♦", "color": "red", "hold": ""},
+      {"rank": "2", "suit": "♠", "color": "", "hold": "hold"},
+      {"rank": "6", "suit": "♠", "color": "", "hold": "hold"},
+      {"rank": "9", "suit": "♠", "color": "", "hold": "hold"},
+      {"rank": "K", "suit": "♠", "color": "", "hold": "hold"}
+    ],
+    "solutionCss": "scenario-green",
+    "hiddenCss": "hidden",
+    "rightCss": "hidden",
+    "wrongCss": "hidden",
+    "solutionTitle": "Flush Draw",
+    "solutionText": "A Low Pair is not worth keeping because it does not payout. Your payout is better drawing for a Flush."
+  },
+  {
+    "id": "basicScenario6",
+    "blueHeader": "High Pair",
+    "greenHeader": "Flush Draw",
+    "description": "High Pair but it is only one card away from a Flush.",
+    "imageURL": "img/scenario1-6.png",
+    "imageText": "High Pair vs Flush Draw",
+    "pokerHand": [
+      {"rank": "2", "suit": "♠", "color": "", "hold": ""},
+      {"rank": "6", "suit": "♠", "color": "", "hold": ""},
+      {"rank": "9", "suit": "♠", "color": "", "hold": ""},
+      {"rank": "K", "suit": "♠", "color": "", "hold": "hold"},
+      {"rank": "K", "suit": "♦", "color": "red", "hold": "hold"}
+    ],
+    "solutionCss": "scenario-blue",
+    "hiddenCss": "hidden",
+    "rightCss": "hidden",
+    "wrongCss": "hidden",
+    "solutionTitle": "High Pair",
+    "solutionText": "Play it safe in this scenario and keep the High Pair. You have a better chance of getting a better hand drawing 3 cards."
+  },
+  {
+    "id": "basicScenario7",
+    "blueHeader": "High Pair",
+    "greenHeader": "Straight Draw",
+    "description": "High Pair but it is only one card away from a Straight.",
+    "imageURL": "img/scenario1-7.png",
+    "imageText": "High Pair vs Straight Draw",
+    "pokerHand": [
+      {"rank": "10", "suit": "♠", "color": "", "hold": ""},
+      {"rank": "J", "suit": "♥", "color": "red", "hold": ""},
+      {"rank": "Q", "suit": "♣", "color": "", "hold": ""},
+      {"rank": "K", "suit": "♠", "color": "", "hold": "hold"},
+      {"rank": "K", "suit": "♦", "color": "red", "hold": "hold"}
+    ],
+    "solutionCss": "scenario-blue",
+    "hiddenCss": "hidden",
+    "rightCss": "hidden",
+    "wrongCss": "hidden",
+    "solutionTitle": "High Pair",
+    "solutionText": "Same as Flush scenario, keep the High Pair. You have a better chance of getting a better hand drawing 3 cards."
+  },
+  {
+    "id": "basicScenario8",
+    "blueHeader": "High Pair",
+    "greenHeader": "Two Pair",
+    "description": "Two Pair on the draw, one of them a High Pair.",
+    "imageURL": "img/scenario1-8.png",
+    "imageText": "High Pair vs Two Pair",
+    "pokerHand": [
+      {"rank": "Q", "suit": "♠", "color": "", "hold": "hold"},
+      {"rank": "Q", "suit": "♥", "color": "red", "hold": "hold"},
+      {"rank": "2", "suit": "♣", "color": "", "hold": "hold"},
+      {"rank": "2", "suit": "♠", "color": "", "hold": "hold"},
+      {"rank": "A", "suit": "♦", "color": "red", "hold": ""}
+    ],
+    "solutionCss": "scenario-green",
+    "hiddenCss": "hidden",
+    "rightCss": "hidden",
+    "wrongCss": "hidden",
+    "solutionTitle": "Two Pair",
+    "solutionText": "Always keep Two Pair when playing Jacks or Better. You have a chance 8.5% of getting Full House."
+  },
+  {
+    "id": "basicScenario9",
+    "blueHeader": "Low Pair",
+    "greenHeader": "Straight Draw",
+    "description": "Low Pair (no payout) on the draw but it is one card away from a Straight.",
+    "imageURL": "img/scenario1-9.png",
+    "imageText": "Low Pair vs Straight Draw",
+    "pokerHand": [
+      {"rank": "2", "suit": "♠", "color": "", "hold": "hold"},
+      {"rank": "2", "suit": "♥", "color": "red", "hold": "hold"},
+      {"rank": "3", "suit": "♣", "color": "", "hold": ""},
+      {"rank": "4", "suit": "♠", "color": "", "hold": ""},
+      {"rank": "5", "suit": "♦", "color": "red", "hold": ""}
+    ],
+    "solutionCss": "scenario-blue",
+    "hiddenCss": "hidden",
+    "rightCss": "hidden",
+    "wrongCss": "hidden",
+    "solutionTitle": "Low Pair",
+    "solutionText": "Same hold cards as the High Pair vs Straight Draw scenario, you have a better chance of getting a payout hand drawing 3 cards and holding on to the pair (28% vs 17%)."
+  },
+  {
+    "id": "basicScenario10",
+    "blueHeader": "Low Pair",
+    "greenHeader": "High Cards",
+    "description": "Low Pair on the draw but the other 3 cards are high cards mixed suit.",
+    "imageURL": "img/scenario1-10.png",
+    "imageText": "Low Pair vs Straight Draw",
+    "pokerHand": [
+      {"rank": "3", "suit": "♠", "color": "", "hold": "hold"},
+      {"rank": "3", "suit": "♥", "color": "red", "hold": "hold"},
+      {"rank": "J", "suit": "♣", "color": "", "hold": ""},
+      {"rank": "K", "suit": "♠", "color": "", "hold": ""},
+      {"rank": "A", "suit": "♦", "color": "red", "hold": ""}
+    ],
+    "solutionCss": "scenario-blue",
+    "hiddenCss": "hidden",
+    "rightCss": "hidden",
+    "wrongCss": "hidden",
+    "solutionTitle": "Low Pair",
+    "solutionText": "By the book, keep the Low Pair. Only exception is when you have three cards to Royal Flush.  Statistically, your odds are BETTER to hold the high cards (38% vs 29%) but the average payout is more than twice as low than holding on to the low pair."
+  }
+]

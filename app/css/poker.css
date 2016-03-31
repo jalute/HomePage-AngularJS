@@ -1,0 +1,461 @@
+/* card rank navbar */
+@media screen and (min-width: 768px) {
+    .bs-example {
+        margin-right: 0;
+        margin-left: 0;
+        background-color: #fff;
+        border-color: #ddd;
+        border-radius: 4px 4px 0 0;
+        box-shadow: none;
+    }
+}
+
+.bs-example {
+    position: relative;
+    padding: 45px 15px 15px;
+    margin: 0 -15px -15px;
+
+}
+.bs-example:after {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #959595;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    content: "Poker Hand Rankings";
+}
+
+.poker-rank-content {
+    position: relative;
+    height: 200px;
+    margin-top: 10px;
+    overflow: auto;
+}
+
+/*  card styles */
+
+@media screen and (min-width: 768px) {
+
+    .poker-card {
+        /*  background-image: url("graphics/cardback.gif"); */
+        /* border-color: #808080 #000000 #000000 #808080;
+        */
+        border-width: 3px;
+        border-style: solid;
+        box-shadow: 4px 4px 3px gray;
+        border-radius: 10%;
+        font-size: 20pt;   /* resize font to resize the poker card */
+        font-family: "Times New Roman";
+        position: relative;
+        width: 3.0em;
+        height: 4.0em;
+        margin-left: 1.5em;
+    }
+
+    .poker-card-practice {
+        /*  background-image: url("graphics/cardback.gif"); */
+        /* border-color: #808080 #000000 #000000 #808080;
+        */
+        border-width: 3px;
+        border-style: solid;
+        box-shadow: 4px 4px 3px gray;
+        border-radius: 10%;
+        font-size: 20pt;   /* resize font to resize the poker card */
+        font-family: "Times New Roman";
+        position: relative;
+        width: 3.2em;
+        height: 4.6em;
+        margin-left: 1.5em;
+    }
+
+
+}
+
+
+.small-poker-card {
+    /*  background-image: url("graphics/cardback.gif"); */
+    border-color: #808080 #000000 #000000 #808080;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5%;
+    font-size: 10pt;   /* resize font to resize the poker card */
+    font-family: "Times New Roman";
+    position: relative;
+    width: 3.2em;
+    height: 4.9em;
+}
+
+.card-front {
+    background-color:ivory;
+    border-radius: 5%;
+    color: #000000;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+a.card-front {
+    width: 100px;
+    height: 100%;
+}
+
+.red { color: #ff0000; }
+
+.discard-red {
+    color: #81000a;
+    background: linear-gradient(lightgray, darkgray);
+}
+
+.discard-black {
+    color: #2b2b2b;
+    background: linear-gradient(lightgray, darkgray);
+}
+
+.card-rank {
+    font-size: 1.5em;
+    font-family: "Gloucester MT Extra Condensed";
+    text-align: center;
+    position: absolute;
+    left: 2px;
+}
+
+
+button div.card-rank {
+    font-size: 1.5em;
+    font-family: "Gloucester MT Extra Condensed";
+    text-align: center;
+    position: absolute;
+    left: 2px;
+    top: 0px;
+}
+
+
+
+.small-suit {
+    font-size: 90%;
+    font-family: "Courier New";
+    position: absolute;
+    height: auto;
+    top: 1.75em;
+    left: .25em;
+}
+
+.large-suit {
+    font-size: 3em;
+    font-family: "Courier New";
+    position: absolute;
+    left: .25em;
+    top:  .25em;
+}
+
+.xlarge-suit {
+    font-size: 2.8em;
+    font-family: "Courier New";
+    position: absolute;
+    left: .28em;
+    top:  .30em;
+}
+
+.face {
+    border: 1px solid #000000;
+    position: absolute;
+    left: 0.50em;
+    top:  0.45em;
+    width:  2.6em;
+    height: 4.0em;
+}
+
+/* Scenario styles */
+.scenario-image {
+    margin-left: 1.5em;
+    margin-right: -10px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.scenario-blue {
+    color: #0597ff;
+}
+
+.scenario-green {
+    color: #31ff09;
+}
+
+.scenario-header {
+    margin-top: 5px;
+}
+
+.scenario-spacer {
+    margin-top: 1.0em;
+}
+
+.scenario-hold {
+    margin-left: 4.5em;
+}
+
+.scenario-solution-header {
+    margin-top: .5em;
+    font-size: 1.5em;
+    font-weight: 200;
+    font-family: "Lucida Bright";
+    line-height: 2.0em;
+    background: black;
+    color: white;
+    border: solid lightgray thin;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* practice page styles */
+#scrollable-area {
+    height: 375px;
+    overflow-y: scroll;
+    border: solid lightblue medium;
+    padding-top: 5px;
+}
+
+.scrollable-area-table {
+    margin-top: 1.3em;
+    /* height: 90%; */
+    width: auto;
+    display: block;
+    overflow: auto;
+
+}
+
+.scrollable-area-header {
+    position: absolute;
+    display: table-cell;
+    margin-top: -1.9em;
+    margin-left: -1px;
+    background: lightskyblue;
+}
+
+.scrollable-area-header th {
+    display: inline-block;
+    min-width: 105px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.scrollable-area-table-body {
+    margin-top: 0.5em;
+}
+
+.scrollable-area-col td {
+    display: inline-block;
+    min-width: 105px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.correct-text {
+    font-family: Capitals, "Times New Roman";
+    font-size: x-large;
+}
+
+.card-hold {
+    margin-bottom: -0.25em;
+    font-size: medium;
+}
+
+.practice-status-row {
+    margin-top: 1em;
+    height: 15px;
+}
+
+.practice-payout {
+    font-family: Phosphate, "Arial Black";
+    font-size: xx-large;
+    color: darkred;
+}
+
+.myTable tr {
+    width: auto;
+}
+.myTable td {
+    width: auto;
+}
+.myTable th {
+    width: auto;
+}
+
+@media screen and (max-width: 321px) {
+    #scrollable-area {
+        height: 231px;
+    }
+
+    .scrollable-area-header th {
+        min-width: 93px;
+    }
+
+    .scrollable-area-col td {
+        min-width: 93px;
+    }
+
+
+}
+
+@media screen and (max-width: 767px) {
+    #scrollable-area {
+        height: 300px;
+    }
+
+    .card-container {
+        font-size: 12pt;   /* resize font to resize the poker card */
+        font-family: "Times New Roman";
+        width: 3.2em;
+        height: 4.2em;
+        margin-left: 0.5em;
+        position: relative;
+        perspective: 800px;
+    }
+
+    .hold-container {
+        font-size: 12pt;
+        width: 3.2em;
+        height: 1.0em;
+        margin-left: 0.5em;
+        position: relative;
+        perspective: 800px;
+    }
+
+    .flip-card {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transform-style: preserve-3d;
+        transition: transform 0.5s;
+    }
+
+    .flip-card figure {
+        margin: 0;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+    }
+
+    .flip-card .front {
+        border-width: 3px;
+        border-style: solid;
+        box-shadow: 4px 4px 3px gray;
+        border-radius: 10%;
+        font-size: 12pt;   /* resize font to resize the poker card */
+        font-family: "Times New Roman";
+        width: 3.2em;
+        height: 4.2em;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .flip-card .back {
+        border-width: 3px;
+        border-style: solid;
+        box-shadow: 4px 4px 3px gray;
+        border-radius: 10%;
+        background-image: url("../img/b2fv.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        font-size: 12pt;   /* resize font to resize the poker card */
+        font-family: "Times New Roman";
+        width: 3.2em;
+        height: 4.2em;
+        transform: rotateY(180deg);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .practice-button-row {
+        margin-left: 3em;
+    }
+
+    .card-container {
+        font-size: 20pt;   /* resize font to resize the poker card */
+        font-family: "Times New Roman";
+        width: 3.2em;
+        height: 4.2em;
+        margin-left: 0.5em;
+        position: relative;
+        perspective: 800px;
+    }
+
+    .hold-container {
+        font-size: 20pt;
+        width: 3.2em;
+        height: 1.0em;
+        margin-left: 0.5em;
+        position: relative;
+        perspective: 800px;
+    }
+
+    .flip-card {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transform-style: preserve-3d;
+        transition: transform 0.5s;
+    }
+
+    .flip-card figure {
+        margin: 0;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+    }
+
+    .flip-card .front {
+        border-width: 3px;
+        border-style: solid;
+        box-shadow: 4px 4px 3px gray;
+        border-radius: 10%;
+        font-size: 20pt;   /* resize font to resize the poker card */
+        font-family: "Times New Roman";
+        width: 3.2em;
+        height: 4.2em;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .flip-card .back {
+        border-width: 3px;
+        border-style: solid;
+        box-shadow: 4px 4px 3px gray;
+        border-radius: 10%;
+        background-image: url("../img/b2fv.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        font-size: 20pt;   /* resize font to resize the poker card */
+        font-family: "Times New Roman";
+        width: 3.2em;
+        height: 4.2em;
+        transform: rotateY(180deg);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.flip-card.flipped {
+    transform: rotateY(180deg);
+}

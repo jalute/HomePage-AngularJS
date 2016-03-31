@@ -1,0 +1,158 @@
+<div class="jumbotron video-poker-background">
+    <div class="container">
+        <h1>Video Poker Basics</h1>
+        <p>This page will teach you the history and basics of playing Video Poker.</p>
+    </div>
+</div>
+<ol class="breadcrumb">
+    <li>Video Poker Trainer</li>
+    <li id="navBasics" class="{{activeBasics}}"><a href="#/vpt/intro">Basics</a></li>
+    <li id="navTactics" class="{{activeTactics}}"><a href="#/vpt/tactics">Tactics</a></li>
+    <li id="navPractice" class="{{activePractice}}"><a href="#/vpt/practice">Practice</a></li>
+</ol>
+
+<div class="container">
+
+    <div class="row content-spacer">
+        <div class="col-lg-5 col-md-5 col-sm-6">
+
+            <h2 class="header-text">Introduction of Video Poker</h2>
+            <p class="my-content">
+                Video Poker simulates a type of casino game called Jacks or Better Poker
+                and general follows the basic rules of poker. A player deposits money into the
+                Video Poker machine and then bets from one to five credits on the hand.
+                Jacks or Better is when a pair of Jacks or better pays.
+            </p>
+            <p class="my-content">
+                The object of Video Poker is to create the best five-card poker hand you can make
+                with two rounds of drawing. Once the cards are dealt, the player selects which cards
+                to keep or hold and the remaining cards are replaced in the second deal. The better
+                poker hand rank you can create, the more credit (or money) you can win. Video Poker
+                is a very popular game because you can win big even with a very small bet (of 25 cents).
+                You can find a Jacks or Better slot machine at most casinos.
+            </p>
+            <a class="btn btn-default btn-lg" role="button" href="#/vpt/practice">Play VP Simulator</a>
+        </div>
+        <div class="col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-6">
+            <img class="center-block img-thumbnail" src="img/VideoPokerScreen.jpg" alt="">
+            <h5 class="text-center">Jacks or Better Video Poker machine</h5>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row content-spacer" id="grad1">
+        <div class="col-lg-5 col-md-5 col-sm-6">
+            <h2 class="header-text">History of Video Poker</h2>
+            <p class="my-content">
+                Video poker is a hybrid of video game and the game of poker.
+                Undeniably video poker is the most recent variant of poker and in the present
+                scenario there are technologically advanced video poker machines which can be
+                seen as a prominent part of many casinos. The image to the right is a poker slot machine
+                that was common in saloons in the 1890s and early 1900s.
+                <button ng-click="onHistoryClick()" class="btn btn-default" role="button">Read more...</button>
+            </p>
+            <div class="collapse" id="collapseHistory">
+                <p class="my-content">
+                    In 1980s a strong demand was felt for a poker game where players need not
+                    observe the movements and facial expressions of other players but enjoy
+                    play poker with ease and comfort. This demand led to invention of video
+                    poker and it was in the year 1970 that the first video poker machine walked
+                    into casinos. Video poker was ideal way to learn poker by beginners, players
+                    only required to check out the payout plans of each machine and adjust their
+                    game play accordingly.
+                </p>
+                <p class="my-content">
+                    The year 1979 marked the launch of Draw Poker and the game took off quickly.
+                    This helped in further strengthening the position of video poker and other video slots.
+                    At the time gamblers did not trust video slots because they could not see the
+                    actual spinning reels. With such a strong demand, video poker machines found a
+                    prominent place in Las Vegas casinos. Over the recent years there had been a
+                    lot of changes in the game play of video poker owing to the efforts of various
+                    companies to make video poker more realistic as the original game of poker.
+                    Irrespective of this one fact, it is very evident that with so much popularity,
+                    the game of video poker will continue to mesmerize its players year after year.
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-lg-offset-1 col-md-offset-1 col-sm-6 text-center">
+            <img class="slot-image" src="img/antique-draw-poker.png" alt="">
+            <h5 class="text-center">Antique poker slot machine</h5>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 text-center">
+            <img class="img-thumbnail full-pay-image" src="img/paytable.png" alt="">
+            <h5 class="text-center">9/6 Payout Table</h5>
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-6">
+            <h2 class="header-text">Full Pay Poker</h2>
+            <p class="my-content">
+                In Jacks or Better Video Poker, the term &quot;Full Pay&quot; is used to describe a 9/6 payout table as shown above.
+                The 9 refers to the payout for a Full House and the 6 refers to the Flush payout.
+                Pay Tables determine what your payout percentage will be for a perfect play.
+                A 9/6 payout table has a theoretical payout of <strong>99.54%</strong> (with max bet). Here are some other payouts:
+            </p>
+            <p class="shift-right">
+                <strong>9/7 = 100.7%</strong> <--ideally the best<br>
+                9/5 = 98.45%<br>
+                8/6 = 98.39%<br>
+                8/5 = 97.30%<br>
+                7/5 = 96.15%
+            </p>
+            <p class="my-content">
+                When looking for a machine to play at your casino,
+                pay attention to the payouts and always play max bet to maximize your chances of winning!</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-8">
+            <h2 class="header-text">Poker Hand Ranking</h2>
+            <p class="my-content">
+                Here is a list of poker hands from highest to lowest rank. Click on the title to get a detailed description of the hand.</p>
+
+            <div class="list-group" id="lgPokerRanks">
+                <a tabindex="0" class="list-group-item" ng-repeat="pokerHand in pokerHands" data-toggle="collapse" data-parent="#lgPokerRanks" data-target="#{{pokerHand.id}}_lg" aria-expanded="false">
+                    <h4 class="list-group-item-heading">{{pokerHand.handRank}} - {{pokerHand.title}} <span class="pull-right" ng-bind-html="pokerHand.example"></span></h4>
+                    <div id="{{pokerHand.id}}_lg" class="collapse">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-2" ng-repeat="card in pokerHand.pokerHand">
+                                <div class="poker-card">
+                                    <div class="card-front {{card.color}} ">
+                                        <div class="card-rank">{{card.rank}}</div>
+                                        <div class="small-suit">{{card.suit}}</div>
+                                        <div class="large-suit">{{card.suit}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-2" ng-repeat="card in pokerHand.secondHand">
+                                <div class="poker-card">
+                                    <div class="card-front {{card.color}} ">
+                                        <div class="card-rank">{{card.rank}}</div>
+                                        <div class="small-suit">{{card.suit}}</div>
+                                        <div class="large-suit">{{card.suit}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="list-group-item-text">{{pokerHand.description}} </p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-4">
+            <img class="royal-flush-image" src="img/royal_flush_hearts.gif" alt="">
+            <h5 class="text-center">Royal Flush</h5>
+        </div>
+    </div>
+</div>
+

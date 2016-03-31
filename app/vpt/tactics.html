@@ -1,0 +1,52 @@
+<div class="jumbotron video-poker-background">
+    <div class="container">
+        <h1>Hold Card Tactics</h1>
+        <p>These are poker hand scenarios where you have a choice between going for a great hand or keeping a good hand.</p>
+    </div>
+</div>
+<ol class="breadcrumb">
+    <li>Video Poker Trainer</li>
+    <li id="navBasics" class="{{activeBasics}}"><a href="#/vpt/intro">Basics</a></li>
+    <li id="navTactics" class="{{activeTactics}}"><a href="#/vpt/tactics">Tactics</a></li>
+    <li id="navPractice" class="{{activePractice}}"><a href="#/vpt/practice">Practice</a></li>
+</ol>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <ul class="nav nav-tabs">
+                <li role="presentation" ng-class="{active: subView == 'hold'}">
+                    <a class="hold-tabs text-center" ng-click="showSubview('hold')">Hold<br>Strategies</a>
+                </li>
+                <li role="presentation" ng-class="{active: subView == 'basicScenarios' }">
+                    <a class="hold-tabs text-center" ng-click="showSubview('basicScenarios')">Basic Hold<br>Scenarios</a>
+                </li>
+                <li role="presentation" ng-class="{active: subView == 'advanceScenarios' }">
+                    <a class="hold-tabs text-center" ng-click="showSubview('advanceScenarios')">Advance Hold<br>Scenarios</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12  ">
+            <div class="tab-content">
+                <div ng-switch="subView">
+                    <div ng-switch-when="hold">
+                        <div ng-include='"vpt/tabs/hold.html"'></div>
+                    </div>
+                    <div ng-switch-when='basicScenarios'>
+                        <div ng-include='"vpt/tabs/basicScenarios.html"'></div>
+                    </div>
+                    <div ng-switch-when='advanceScenarios'>
+                        <div ng-include='"vpt/tabs/advanceScenario.html"'></div>
+                    </div>
+                    <div ng-switch-default="basicScenarios">
+                        <div ng-include='"vpt/tabs/hold.html"'></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

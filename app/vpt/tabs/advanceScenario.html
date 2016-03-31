@@ -1,0 +1,55 @@
+<p>
+    The following scenarios are the poker hands that are a little trickier and have no obvious choice on the draw.
+    These scenarios will teach you what cards to hold to give yourself the best possible chance to receiving a payout in Jacks or Better.
+</p>
+<h2 class="text-center"><span class="glyphicon glyphicon-king"></span></h2>
+<h5 class="text-center">Advance Hold Scenarios</h5>
+
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12" ng-repeat="scenario in advanceScenarios">
+
+        <div class="panel panel-default" id="panPokerRanks">
+            <div class="panel-heading" tabindex="0" data-toggle="collapse" data-parent="#panPokerRanks" data-target="#{{scenario.id}}_p" aria-expanded="false">
+                <span class="glyphicon glyphicon-ok pull-right scenario-green {{scenario.rightCss}}"></span>
+                <span class="glyphicon glyphicon-remove pull-right red {{scenario.wrongCss}}"></span>
+                <h3 class="text-center scenario-header">
+                    <span class="scenario-blue">{{scenario.blueHeader}}</span>
+                    <span class="scenario-white">vs</span>
+                    <span class="scenario-green">{{scenario.greenHeader}}</span>
+                </h3>
+                <h5 class="text-center">{{scenario.description}}</h5>
+            </div>
+            <div id="{{scenario.id}}_p" class="collapse scenario-spacer panel-body">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2 col-sm-2" ng-repeat="card in scenario.pokerHand">
+                        <div class="poker-card">
+                            <div class="card-front {{card.color}} ">
+                                <div class="card-rank">{{card.rank}}</div>
+                                <div class="small-suit">{{card.suit}}</div>
+                                <div class="large-suit">{{card.suit}}</div>
+                            </div>
+                        </div>
+                        <h5 class="{{scenario.hiddenCss}} {{scenario.solutionCss}} scenario-hold text-center text-uppercase">{{card.hold}}</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-11 col-md-11 col-sm-11">
+                        <img src="{{scenario.imageURL}}" alt="{{scenario.imageText}}" class="scenario-image">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-lg btn-primary" ng-click="onBlueGuessClick(scenario)">{{scenario.blueHeader}}</button>
+                    <button class="btn btn-lg btn-success" ng-click="onGreenGuessClick(scenario)">{{scenario.greenHeader}}</button>
+                </div>
+                <button class="btn btn-lg btn-primary center-block hidden" ng-click="onSolutionClick(scenario)">Show Hold Cards</button>
+                <div id="{{scenario.id}}_sol2" class="{{scenario.hiddenCss}}">
+                    <br>
+                    <div class="scenario-solution-header">{{scenario.rightWrong}} The correct hold is <span class="{{scenario.solutionCss}}">{{scenario.solutionTitle}}</span></div>
+                    <h5 class="text-center">{{scenario.solutionText}}</h5>
+                </div>
+                <br>
+                <button class="btn btn-sm center-block" data-toggle="collapse" data-target="#{{scenario.id}}_p">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
