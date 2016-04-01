@@ -1,6 +1,6 @@
-# JaluteWeb
+# HomePage-AngularJS
 
-This project is the source code for jalute.com.  The project contains the Video Poker Trainer ported from C# to angularJS.
+This project is the source code for jalute.com.  The project contains the Video Poker Trainer ported from C# to HTML5/CSS/Javascript and AngularJS.
 
 ## Getting Started
 
