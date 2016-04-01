@@ -1,8 +1,8 @@
 {
-  "name": "VideoPokerTrainer",
-  "description": "A Video Poker Trainer application written in AngularJS",
+  "name": "HomePage-AngularJS",
+  "description": "Website for jalute.com",
   "version": "0.0.0",
-  "homepage": "http://jalute.com/videopokertrainer",
+  "homepage": "http://jalute.com",
   "license": "MIT",
   "private": true,
   "dependencies": {
